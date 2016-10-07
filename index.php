@@ -49,40 +49,10 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<section id="contact">
-    <form>
-        <div class="row">
-            <div class="columns medium-10 medium-offset-1">
-                <h3 class="text-center"><?php _e( 'Contact Us', 'courseplanner' ); ?></h3>
-                <div class="row">
-                    <div class="columns small-12 medium-6">
-                        <input type="text" name="name" placeholder="*name" pattern="[a-zA-Z\s]{1,}" title="Please only use letters" required="" />
-                        <input type="email" name="email" placeholder="*email" required="" />
-                        <select>
-                            <option value="husker">
-                                <?php _e( 'interested in', 'courseplanner' ); ?>
-                            </option>
-                            <option value="starbuck">
-                                <?php _e( 'Starbuck', 'courseplanner' ); ?>
-                            </option>
-                            <option value="hotdog">
-                                <?php _e( 'Hot Dog', 'courseplanner' ); ?>
-                            </option>
-                            <option value="apollo">
-                                <?php _e( 'Apollo', 'courseplanner' ); ?>
-                            </option>
-                        </select>
-                    </div>
-                    <div class="columns small-12 medium-6">
-                        <textarea placeholder="* comments" required=""></textarea>
-                        <button class="orange-button">
-                            <?php _e( 'Submit', 'courseplanner' ); ?>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-</section>            
+<?php if ( is_active_sidebar( 'contact_area' ) ) : ?>
+    <section id="contact">
+        <?php dynamic_sidebar( 'contact_area' ); ?>
+    </section>
+<?php endif; ?>
 
 <?php get_footer(); ?>
