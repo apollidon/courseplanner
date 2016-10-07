@@ -118,6 +118,507 @@ function courseplanner_customize_register( $wp_customize ) {
         'section' => 'main_area_settings'
     ) ) );
 
+    $wp_customize->add_setting( 'main_subheading', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
+    ));
+
+    $wp_customize->add_control( 'main_subheading', array(
+        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_subheading_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
+        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_title', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque Sed Sapien Lorem'
+    ));
+
+    $wp_customize->add_control( 'main_title', array(
+        'label' => __( 'Main Title', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Main Title'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_title_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
+        'label' => __( 'Main Title Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_button', array(
+        'type' => 'theme_mod',
+        'default' => 'Request Demo'
+    ));
+
+    $wp_customize->add_control( 'main_button', array(
+        'label' => __( 'Main Button', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings'
+    ));
+
+    $wp_customize->add_setting( 'main_button_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_button_color', array(
+        'label' => __( 'Main Button Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_section( 'main_area_settings', array(
+        'title' => __( 'Main Area Settings', 'courseplanner' )
+    ));
+
+    $wp_customize->add_setting( 'main_bkg', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'main_bkg', array(
+        'label' => __( 'Main Background Image', 'courseplanner' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_subheading', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
+    ));
+
+    $wp_customize->add_control( 'main_subheading', array(
+        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_subheading_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
+        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_title', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque Sed Sapien Lorem'
+    ));
+
+    $wp_customize->add_control( 'main_title', array(
+        'label' => __( 'Main Title', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Main Title'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_title_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
+        'label' => __( 'Main Title Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_button', array(
+        'type' => 'theme_mod',
+        'default' => 'Request Demo'
+    ));
+
+    $wp_customize->add_control( 'main_button', array(
+        'label' => __( 'Main Button', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings'
+    ));
+
+    $wp_customize->add_setting( 'main_button_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_button_color', array(
+        'label' => __( 'Main Button Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_section( 'main_area_settings', array(
+        'title' => __( 'Main Area Settings', 'courseplanner' )
+    ));
+
+    $wp_customize->add_setting( 'main_bkg', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'main_bkg', array(
+        'label' => __( 'Main Background Image', 'courseplanner' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_subheading', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
+    ));
+
+    $wp_customize->add_control( 'main_subheading', array(
+        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_subheading_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
+        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_title', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque Sed Sapien Lorem'
+    ));
+
+    $wp_customize->add_control( 'main_title', array(
+        'label' => __( 'Main Title', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Main Title'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_title_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
+        'label' => __( 'Main Title Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_button', array(
+        'type' => 'theme_mod',
+        'default' => 'Request Demo'
+    ));
+
+    $wp_customize->add_control( 'main_button', array(
+        'label' => __( 'Main Button', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings'
+    ));
+
+    $wp_customize->add_setting( 'main_button_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_button_color', array(
+        'label' => __( 'Main Button Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_section( 'main_area_settings', array(
+        'title' => __( 'Main Area Settings', 'courseplanner' )
+    ));
+
+    $wp_customize->add_setting( 'main_bkg', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'main_bkg', array(
+        'label' => __( 'Main Background Image', 'courseplanner' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_subheading', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
+    ));
+
+    $wp_customize->add_control( 'main_subheading', array(
+        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_subheading_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
+        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_title', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque Sed Sapien Lorem'
+    ));
+
+    $wp_customize->add_control( 'main_title', array(
+        'label' => __( 'Main Title', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Main Title'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_title_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
+        'label' => __( 'Main Title Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_button', array(
+        'type' => 'theme_mod',
+        'default' => 'Request Demo'
+    ));
+
+    $wp_customize->add_control( 'main_button', array(
+        'label' => __( 'Main Button', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings'
+    ));
+
+    $wp_customize->add_setting( 'main_button_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_button_color', array(
+        'label' => __( 'Main Button Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_section( 'main_area_settings', array(
+        'title' => __( 'Main Area Settings', 'courseplanner' )
+    ));
+
+    $wp_customize->add_setting( 'main_bkg', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'main_bkg', array(
+        'label' => __( 'Main Background Image', 'courseplanner' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_subheading', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
+    ));
+
+    $wp_customize->add_control( 'main_subheading', array(
+        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_subheading_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
+        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_title', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque Sed Sapien Lorem'
+    ));
+
+    $wp_customize->add_control( 'main_title', array(
+        'label' => __( 'Main Title', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Main Title'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_title_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
+        'label' => __( 'Main Title Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_button', array(
+        'type' => 'theme_mod',
+        'default' => 'Request Demo'
+    ));
+
+    $wp_customize->add_control( 'main_button', array(
+        'label' => __( 'Main Button', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings'
+    ));
+
+    $wp_customize->add_setting( 'main_button_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_button_color', array(
+        'label' => __( 'Main Button Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_section( 'main_area_settings', array(
+        'title' => __( 'Main Area Settings', 'courseplanner' )
+    ));
+
+    $wp_customize->add_setting( 'main_bkg', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'main_bkg', array(
+        'label' => __( 'Main Background Image', 'courseplanner' ),
+        'type' => 'media',
+        'mime_type' => 'image',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_subheading', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
+    ));
+
+    $wp_customize->add_control( 'main_subheading', array(
+        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_subheading_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
+        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_title', array(
+        'type' => 'theme_mod',
+        'default' => 'Pellentesque Sed Sapien Lorem'
+    ));
+
+    $wp_customize->add_control( 'main_title', array(
+        'label' => __( 'Main Title', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings',
+        'input_attrs' => 
+            array(
+                'placeholder' => 'Main Title'
+            )
+    ));
+
+    $wp_customize->add_setting( 'main_title_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
+        'label' => __( 'Main Title Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
+    $wp_customize->add_setting( 'main_button', array(
+        'type' => 'theme_mod',
+        'default' => 'Request Demo'
+    ));
+
+    $wp_customize->add_control( 'main_button', array(
+        'label' => __( 'Main Button', 'courseplanner' ),
+        'type' => 'text',
+        'section' => 'main_area_settings'
+    ));
+
+    $wp_customize->add_setting( 'main_button_color', array(
+        'type' => 'theme_mod'
+    ));
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_button_color', array(
+        'label' => __( 'Main Button Color', 'courseplanner' ),
+        'type' => 'color',
+        'section' => 'main_area_settings'
+    ) ) );
+
     /* Pinegrow generated Customizer Controls End */
 
 }
@@ -139,8 +640,8 @@ if ( ! function_exists( 'courseplanner_enqueue_scripts' ) ) :
     wp_deregister_script( 'foundation' );
     wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/foundation.min.js', false, null, true);
 
-    wp_deregister_script( 'foundationtopbar' );
-    wp_enqueue_script( 'foundationtopbar', get_template_directory_uri() . '/js/foundation/foundation.topbar.js', false, null, true);
+    wp_deregister_script( 'scroll' );
+    wp_enqueue_script( 'scroll', get_template_directory_uri() . '/js/scroll.js', false, null, true);
 
     /* Pinegrow generated Enqueue Scripts End */
 

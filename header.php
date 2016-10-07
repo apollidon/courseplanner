@@ -33,16 +33,16 @@
                     <nav id="main-menu" class="top-bar" data-topbar role="navigation">
                         <ul class="dropdown menu align-right vertical medium-horizontal" data-responsive-menu="" data-dropdown-menu>
                             <li>
-                                <a href="#"><?php _e( 'how it works', 'courseplanner' ); ?></a>
+                                <a href="#how-it-works"><?php _e( 'how it works', 'courseplanner' ); ?></a>
                             </li>
                             <li>
-                                <a href="#"><?php _e( 'FAQ', 'courseplanner' ); ?></a>
+                                <a href="#faq"><?php _e( 'FAQ', 'courseplanner' ); ?></a>
                             </li>
                             <li>
-                                <a href="#"><?php _e( 'CONTACT US', 'courseplanner' ); ?></a>
+                                <a href="#contact"><?php _e( 'CONTACT US', 'courseplanner' ); ?></a>
                             </li>
                             <!-- A dropdown in case we need it -->
-                            <!-- <li class="is-dropdown-submenu-parent opens-right" data-pg-collapsed>
+                            <!-- <li class="is-dropdown-submenu-parent opens-right">
                                 <a href="#" tabindex="0">dropdown</a>
                                 <ul class="menu vertical submenu is-dropdown-submenu first-sub">
                                     <li class="is-submenu-item is-dropdown-submenu-item">
