@@ -1,0 +1,494 @@
+/*
+Theme Name: CoursePlanner
+Theme URI: http://example.com
+Author: Your name
+Author URI: http://pinegrow.com/
+Description: This theme was created with Pinegrow Web Editor.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: courseplanner
+*/
+
+
+/* not using at the moment */
+
+/*@font-face {
+  font-family: 'foundation-icons';
+  src:  url('fonts/foundation-icons/foundation-icons.woff') format('woff'),
+        url('fonts/foundation-icons/foundation-icons.eot') format('eot'),
+        url('fonts/foundation-icons/foundation-icons.ttf') format('ttf'),
+        url('fonts/foundation-icons/foundation-icons.svg') format('svg');
+
+}*/
+
+body
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    font-size: 100%;
+}
+
+header
+{
+    background-color: #fff;
+    border-bottom: 2px solid rgba(155,154,155,0.40);
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 24px;
+    color: inherit;
+}
+
+a
+{
+    color: inherit;
+}
+
+#logo
+{
+    color: #4A4A4A;
+    font-weight: 500;
+    font-family: 'roboto slab', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#logo span
+{
+    color: #0069A6;
+}
+
+#logo span:first-child
+{
+    font-weight: bold;
+}
+
+#logo span:nth-child(2)
+{
+    font-weight: 100;
+}
+
+.menu
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: #4A4A4A;
+    text-transform: uppercase;
+}
+
+.menu li
+{
+    margin-right: 20px;
+}
+
+.menu li a
+{
+    border-top: 5px solid transparent;
+    padding-top: 24px;
+}
+
+.menu a:hover
+{
+    color: #8E8E8E;
+    border-top-color: #E44207;
+}
+
+.menu .active > a
+{
+    color: #8E8E8E;
+    border-top-color: #E44207;
+    background: transparent;
+}
+
+.top-bar,
+  .top-bar ul
+{
+    background-color: #fff;
+    padding: 0px;
+}
+
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 5px;
+    border-color: #0069A6 transparent transparent;
+    border-top-style: solid;
+    border-bottom-width: 0;
+    right: 5px;
+    margin-top: 3px;
+}
+
+.title-bar {
+  background: transparent;
+  color: #4a4a4a;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+  -webkit-align-items: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-icon
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 20px;
+    height: 16px;
+}
+
+.menu-icon::after
+{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #4A4A4A;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0 7px 0 #4A4A4A, 0 14px 0 #4A4A4A;
+    box-shadow: 0 7px 0 #4A4A4A, 0 14px 0 #4A4A4A;
+}
+
+#main
+{
+    height: auto;
+    background-image: url('img/artboard-2trig-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #4A4A4A;
+}
+
+#main h2
+{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#main p
+{
+    font-size: 24px;
+}
+
+#main .row
+{
+    padding: 80px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+#main .row .columns:nth-child(1)
+{
+}
+
+#main .row .columns:nth-child(1) p
+{
+    margin-top: 40px;
+    font-weight: 300;
+}
+
+#main .row .columns:nth-child(2)
+{
+    margin-bottom: 80px;
+}
+
+#main .row .columns img
+{
+    width: 546px;
+    height: auto;
+}
+
+#main form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#main form input[type="email"]
+{
+    background-color: transparent;
+    border: 2px solid #D8D8D8;
+    border-radius: 4px;
+    width: 335px;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.orange-button
+{
+    background-color: #E44207;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50);
+    border-radius: 4px;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 24px;
+    transition: all 0.2s ease-out;
+    color: #fff;
+}
+
+.orange-button:hover
+{
+    background-color: #FF661B;
+}
+
+#main .orange-button
+{
+    width: 335px;
+    margin-top: 40px;
+}
+
+.triangle-border
+{
+    width: 172px;
+    position: relative;
+    padding: 5px;
+    margin: 20px auto;
+    border: 1px solid #fff;
+    color: #fff;
+    background: rgba(0, 0, 0, 0) !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 100px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.2s ease-out;
+}
+
+.triangle-border:before
+{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 65px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.triangle-border:hover
+{
+    color: #000;
+    background: #fff !important;
+    cursor: pointer;
+}
+
+#how-it-works
+{
+    padding: 20px 0 60px 0;
+}
+
+#how-it-works .orange-button
+{
+    width: 250px;
+    height: 48px;
+    color: #fff;
+}
+
+#how-it-works h1
+{
+    font-size: 36px;
+    font-weight: 600;
+    color: #4A4A4A;
+    text-align: center;
+    padding: 40px 0;
+    text-transform: capitalize;
+}
+
+#how-it-works p
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #4A4A4A;
+    text-align: center;
+    margin: 40px 0;
+}
+
+#faq
+{
+    color: #4A4A4A;
+    background-image: url('img/trigblue-bg.jpg');
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#faq h2
+{
+    padding: 20px 0 60px 0;
+}
+
+#faq h3
+{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#faq .row .columns
+{
+    padding: 0 20px;
+}
+
+#faq .triangle-border
+{
+    margin-top: 40px;
+}
+
+#contact
+{
+    padding: 40px 0 30px;
+}
+
+
+#contact h3
+{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4A4A4A;
+    margin-bottom: 40px;
+}
+
+#contact form .orange-button
+{
+    width: 100%;
+    heigth: 40px;
+    color: #fff;
+    padding: 8px;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form select
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8E8E8E;
+    height: 40px;
+    background: #D8D8D8;
+    box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.50);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+#contact form textarea
+{
+    min-height: 110px;
+}
+
+#contact form select
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8E8E8E;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='36' height='28' viewBox='0 0 26 20'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+    -webkit-background-size: 9px 6px;
+    background-size: 9px 6px;
+    background-position: right -1rem center;
+    -webkit-background-origin: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+#contact ::-webkit-input-placeholder
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+#contact :-moz-placeholder
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+#contact ::-moz-placeholder
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+#contact :-ms-input-placeholder
+{
+    font-size: 18px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+footer
+{
+    font-size: 14px;
+    color: #4A4A4A;
+    background-color: #D8D8D8;
+}
+
+footer p
+{
+    padding-top: 28px;
+}
+
+footer nav .menu
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+@media (max-width:40em)
+{
+    #faq .row .columns
+    {
+        padding-bottom: 40px;
+    }
+    #faq .row .columns:last-child
+    {
+        padding-bottom: 0px;
+    }
+    #contact form .row
+    {
+        padding: 0 20px 20px;
+    }
+    .menu.sm-vertical
+    {
+        display: block;
+    }
+    .menu.sm-vertical li
+    {
+        border-bottom: 1px dashed #000;
+        padding: 10px 10px 10px 0;
+    }
+    .menu.sm-vertical li:last-child
+    {
+        border-bottom: none;
+    }
+}
+
