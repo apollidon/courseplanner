@@ -190,7 +190,7 @@ a
 
 #main .row
 {
-    padding: 80px 0;
+    padding: 60px 0;
     display: flex;
     overflow: hidden;
 }
@@ -201,9 +201,11 @@ a
 
 #main .row .columns:nth-child(1) p
 {
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     font-weight: 300;
 }
+
 
 #main .row .columns:nth-child(2)
 {
@@ -212,7 +214,7 @@ a
 
 #main .row .columns img
 {
-    width: 546px;
+    width: 889px;
     height: auto;
 }
 
@@ -255,7 +257,7 @@ a
 #main .orange-button
 {
     width: 335px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .triangle-border
@@ -365,7 +367,6 @@ a
     padding: 40px 0 30px;
 }
 
-
 #contact h3
 {
     font-size: 24px;
@@ -456,15 +457,18 @@ a
     color: #fff;
 }
 
-#contact form input.orange-button:hover {
+#contact form input.orange-button:hover
+{
     background-color: #FF661B;
 }
 
-.caldera-grid .form-control {
+.caldera-grid .form-control
+{
     padding: 0px 24px 0px 16px;
 }
 
-.caldera-grid textarea.form-control {
+.caldera-grid textarea.form-control
+{
     padding-top: 8px;
 }
 
@@ -515,3 +519,4 @@ footer nav .menu
         border-bottom: none;
     }
 }
+

@@ -5,7 +5,7 @@ get_header(); ?>
 <section id="main" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>">
     <div class="row">
         <div class="columns align-self-middle text-center">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/laptop.png" />
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Course-Planner-Boring.png" />
             <p class="text-center" style="color:<?php echo get_theme_mod( 'main_subheading_color' ); ?>;"><?php echo get_theme_mod( 'main_subheading', __( 'Pellentesque sed sapien lorem at lacinia urna.', 'courseplanner' ) ); ?></p>
             <h2 class="text-center" style="color:<?php echo get_theme_mod( 'main_title_color' ); ?>;"><?php echo get_theme_mod( 'main_title', __( 'Pellentesque Sed Sapien Lorem', 'courseplanner' ) ); ?></h2>
             <button class="orange-button" style="background-color:<?php echo get_theme_mod( 'main_button_color' ); ?>;">
@@ -21,7 +21,12 @@ get_header(); ?>
             <div class="row align-center">
                 <div class="columns medium-8">
                     <div class="flex-video widescreen">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/qZKvZzRynLE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <video width="640" height="360" controls>
+                            <source src="wp-content/themes/courseplanner/assets/CourseplanningWalkthrough.mp4" type="video/mp4">
+                            <!-- <source src="assets/courseplannerDemo.ogg" type="video/ogg"> -->
+                            <?php _e( 'Your browser does not support the video tag.', 'courseplanner' ); ?>
+                        </video>
+                        <!-- <iframe width="640" height="360" src="assets/courseplannerDemo.mp4" frameborder="0" allowfullscreen></iframe> -->
                     </div>
                     <p><?php _e( 'Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.', 'courseplanner' ); ?> </p>
                     <button class="orange-button float-center">
