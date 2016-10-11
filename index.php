@@ -17,24 +17,33 @@ get_header(); ?>
 <section id="how-it-works">
     <div class="row">
         <div class="columns medium-12">
-            <h1><?php _e( 'Pellentesque sed sapien lorem at lacinia urna', 'courseplanner' ); ?></h1>
             <div class="row align-center">
-                <div class="columns medium-8">
-                    <div class="flex-video widescreen">
-                        <video width="640" height="360" controls>
-                            <source src="wp-content/themes/courseplanner/assets/CourseplanningWalkthrough.mp4" type="video/mp4">
-                            <!-- <source src="assets/courseplannerDemo.ogg" type="video/ogg"> -->
-                            <?php _e( 'Your browser does not support the video tag.', 'courseplanner' ); ?>
-                        </video>
-                        <!-- <iframe width="640" height="360" src="assets/courseplannerDemo.mp4" frameborder="0" allowfullscreen></iframe> -->
-                    </div>
-                    <p><?php _e( 'Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.', 'courseplanner' ); ?> </p>
-                    <button class="orange-button float-center">
-                        <?php _e( 'Request Demo', 'courseplanner' ); ?>
-                    </button>
+                <div class="columns medium-10">
+                    <?php if ( have_posts() ) : ?>
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                                <h1><?php the_title(); ?></h1>
+                                <div class="flex-video widescreen">
+                                    <video width="640" height="360" controls>
+                                        <source src="wp-content/themes/courseplanner/assets/CourseplanningWalkthrough.mp4" type="video/mp4">
+                                        <!-- <source src="assets/courseplannerDemo.ogg" type="video/ogg"> -->
+                                        <?php _e( 'Your browser does not support the video tag.', 'courseplanner' ); ?>
+                                    </video>
+                                    <!-- <iframe width="640" height="360" src="assets/courseplannerDemo.mp4" frameborder="0" allowfullscreen></iframe> -->
+                                </div>
+                                <?php the_content(); ?>
+                                <button class="orange-button float-center">
+                                    <?php _e( 'Request Demo', 'courseplanner' ); ?>
+                                </button>
+                            </article>
+                        <?php endwhile; ?>
+                    <?php else : ?>
+                        <p><?php _e( 'Sorry, no posts matched your criteria.', 'courseplanner' ); ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
+        <!-- .column end -->
     </div>
 </section>
 <section id="faq">
@@ -54,10 +63,40 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<?php if ( is_active_sidebar( 'contact_area' ) ) : ?>
-    <section id="contact">
-        <?php dynamic_sidebar( 'contact_area' ); ?>
-    </section>
-<?php endif; ?>
+<section id="contact">
+    <form>
+        <div class="row">
+            <div class="columns medium-10 medium-offset-1">
+                <h3 class="text-center"><?php _e( 'Contact Us', 'courseplanner' ); ?></h3>
+                <div class="row">
+                    <div class="columns small-12 medium-6">
+                        <input type="text" name="name" placeholder="*name" pattern="[a-zA-Z\s]{1,}" title="Please only use letters" required="" />
+                        <input type="email" name="email" placeholder="*email" required="" />
+                        <select>
+                            <option value="husker">
+                                <?php _e( 'interested in', 'courseplanner' ); ?>
+                            </option>
+                            <option value="starbuck">
+                                <?php _e( 'Starbuck', 'courseplanner' ); ?>
+                            </option>
+                            <option value="hotdog">
+                                <?php _e( 'Hot Dog', 'courseplanner' ); ?>
+                            </option>
+                            <option value="apollo">
+                                <?php _e( 'Apollo', 'courseplanner' ); ?>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="columns small-12 medium-6">
+                        <textarea placeholder="* comments" required=""></textarea>
+                        <button class="orange-button">
+                            <?php _e( 'Submit', 'courseplanner' ); ?>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>            
 
 <?php get_footer(); ?>
