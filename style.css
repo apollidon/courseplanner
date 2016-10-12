@@ -91,7 +91,7 @@ a
     padding-top: 24px;
 }
 
-.menu a:hover
+.menu li a:hover
 {
     color: #8E8E8E;
     border-top-color: #E44207;
@@ -175,6 +175,7 @@ a
     background-position: center;
     background-size: cover;
     color: #4A4A4A;
+    border-bottom: 2px solid rgba(155,154,155,0.40);
 }
 
 #main h2
@@ -334,10 +335,12 @@ a
 {
     color: #4A4A4A;
     background-image: url('img/trigblue-bg.jpg');
-    padding: 60px 0;
+    padding: 60px 0 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-top: 2px solid rgba(155,154,155,0.40);
+    border-bottom: 2px solid rgba(155,154,155,0.40);
 }
 
 #faq h2
@@ -354,7 +357,7 @@ a
 
 #faq .row .columns
 {
-    padding: 0 20px;
+    padding: 0 20px 30px;
 }
 
 #faq .triangle-border
@@ -477,6 +480,7 @@ footer
     font-size: 14px;
     color: #4A4A4A;
     background-color: #D8D8D8;
+    border-top: 2px solid rgba(155,154,155,0.40);
 }
 
 footer p
@@ -505,17 +509,25 @@ footer nav .menu
     {
         padding: 0 20px 20px;
     }
-    .menu.sm-vertical
+
+    .menu li
     {
-        display: block;
-    }
-    .menu.sm-vertical li
-    {
+        margin: 0 auto;
         border-bottom: 1px dashed #000;
-        padding: 10px 10px 10px 0;
+        /*padding: 0px 0px 0px 0px;*/
     }
-    .menu.sm-vertical li:last-child
+
+    .menu li a {
+
+        padding: 20px 0px 20px 10px;
+    }
+
+    .menu li:last-child
     {
         border-bottom: none;
     }
+
+
+
+
 }

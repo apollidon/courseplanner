@@ -61,7 +61,7 @@ get_header(); ?>
               	the_content();
               echo '</div>';
             endwhile;
-         ?>
+        ?>
     </div>
 </section>
 <section id="contact">
