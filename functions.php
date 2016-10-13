@@ -18,7 +18,7 @@ function courseplanner_setup() {
      * Let WordPress manage the document title.
      */
     add_theme_support( 'title-tag' );
-    
+
     /*
      * Enable support for Post Thumbnails on posts and pages.
      */
@@ -55,7 +55,7 @@ if ( ! function_exists( 'courseplanner_init' ) ) :
 
 function courseplanner_init() {
 
-    
+
     // Use categories and tags with attachments
     register_taxonomy_for_object_type( 'category', 'attachment' );
     register_taxonomy_for_object_type( 'post_tag', 'attachment' );
@@ -80,8 +80,23 @@ function courseplanner_init() {
         'menu_icon' => 'dashicons-format-chat'
     ));
 
+    register_post_type('faq_posts', array(
+        'labels' => 
+            array(
+                'name' => __( 'FAQ', 'courseplanner' ),
+                'singular_name' => __( 'faq', 'courseplanner' )
+            ),
+        'description' => __( 'FAQ', 'courseplanner' ),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array( 'title', 'author', 'editor', 'thumbnail', 'excerpt' ),
+        'has_archive' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-format-chat'
+    ));
+
     /* Pinegrow generated Custom Post Types End */
-    
+
     /*
      * Register custom taxonomies. You can also move this code to a plugin.
      */
@@ -117,71 +132,6 @@ function courseplanner_customize_register( $wp_customize ) {
     // Do stuff with $wp_customize, the WP_Customize_Manager object.
 
     /* Pinegrow generated Customizer Controls Begin */
-
-    $wp_customize->add_section( 'main_area_settings', array(
-        'title' => __( 'Main Area Settings', 'courseplanner' )
-    ));
-
-    $wp_customize->add_setting( 'main_bkg', array(
-        'type' => 'theme_mod'
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'main_bkg', array(
-        'label' => __( 'Main Background Image', 'courseplanner' ),
-        'type' => 'media',
-        'mime_type' => 'image',
-        'section' => 'main_area_settings'
-    ) ) );
-
-    $wp_customize->add_setting( 'main_title', array(
-        'type' => 'theme_mod',
-        'default' => 'Pellentesque Sed Sapien Lorem'
-    ));
-
-    $wp_customize->add_control( 'main_title', array(
-        'label' => __( 'Main Title', 'courseplanner' ),
-        'type' => 'text',
-        'section' => 'main_area_settings',
-        'input_attrs' => 
-            array(
-                'placeholder' => 'Main Title'
-            )
-    ));
-
-    $wp_customize->add_setting( 'main_title_color', array(
-        'type' => 'theme_mod'
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_title_color', array(
-        'label' => __( 'Main Title Color', 'courseplanner' ),
-        'type' => 'color',
-        'section' => 'main_area_settings'
-    ) ) );
-
-    $wp_customize->add_setting( 'main_subheading', array(
-        'type' => 'theme_mod',
-        'default' => 'Pellentesque sed sapien lorem at lacinia urna.'
-    ));
-
-    $wp_customize->add_control( 'main_subheading', array(
-        'label' => __( 'Main Sub-Heading', 'courseplanner' ),
-        'type' => 'text',
-        'section' => 'main_area_settings',
-        'input_attrs' => 
-            array(
-                'placeholder' => 'Pellentesque sed sapien lorem at lacinia urna'
-            )
-    ));
-
-    $wp_customize->add_setting( 'main_subheading_color', array(
-        'type' => 'theme_mod'
-    ));
-
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'main_subheading_color', array(
-        'label' => __( 'Sub-Heading Color', 'courseplanner' ),
-        'type' => 'color',
-        'section' => 'main_area_settings'
-    ) ) );
 
     $wp_customize->add_section( 'main_area_settings', array(
         'title' => __( 'Main Area Settings', 'courseplanner' )
@@ -732,6 +682,12 @@ if ( ! function_exists( 'courseplanner_enqueue_scripts' ) ) :
     wp_enqueue_script( 'scroll', get_template_directory_uri() . '/js/scroll.js', false, null, true);
 
     /* Pinegrow generated Enqueue Scripts End */
+
+    wp_enqueue_script( 'call-validate', get_template_directory_uri() . '/js/form_validation/call-validate.js', false, null, true);
+
+    wp_enqueue_script( 'form-clear', get_template_directory_uri() . '/js/form_validation/form-clear.js', false, null, true);
+
+    wp_enqueue_script( 'jquery.validate.min', get_template_directory_uri() . '/js/form_validation/jquery.validate.min.js', false, null, true);
 
         /* Pinegrow generated Enqueue Styles Begin */
 

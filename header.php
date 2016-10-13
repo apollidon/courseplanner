@@ -16,17 +16,13 @@
             <div class="row">
                 <div class="columns medium-6 hide-for-small-only">
                     <div id="logo">
-                        <?php _e( 'Course', 'courseplanner' ); ?>
-                        <span><?php _e( 'Planner', 'courseplanner' ); ?></span>
-                        <?php _e( 'WP', 'courseplanner' ); ?>
+                        <a href="<?php echo esc_url( home_url() ); ?>"><?php _e( 'Course', 'courseplanner' ); ?><span><?php _e( 'Planner', 'courseplanner' ); ?></span><?php _e( 'WP', 'courseplanner' ); ?></a>
                     </div>
                 </div>
                 <div class="medium-6 columns">
                     <div class="title-bar hide-for-medium" data-responsive-toggle="main-menu" data-hide-for="medium">
                         <div id="logo">
-                            <?php _e( 'Course', 'courseplanner' ); ?>
-                            <span><?php _e( 'Planner', 'courseplanner' ); ?></span>
-                            <?php _e( 'WP', 'courseplanner' ); ?>
+                            <a href="<?php echo esc_url( home_url() ); ?>"><?php _e( 'Course', 'courseplanner' ); ?><span><?php _e( 'Planner', 'courseplanner' ); ?></span><?php _e( 'WP', 'courseplanner' ); ?></a>
                         </div>
                         <button class="menu-icon" type="button" data-toggle></button>
                     </div>

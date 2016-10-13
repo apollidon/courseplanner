@@ -64,7 +64,7 @@ get_header(); ?>
     </div>
 </section>
 <section id="contact">
-    <form>
+    <form class="request_demo">
         <div class="row">
             <div class="columns medium-10 medium-offset-1">
                 <h3 class="text-center"><?php _e( 'Contact Us', 'courseplanner' ); ?></h3>

@@ -72,6 +72,10 @@ a
     font-weight: 100;
 }
 
+#logo a:hover {
+    color: #E44207;
+}
+
 .menu
 {
     font-size: 14px;
@@ -331,6 +335,11 @@ a
     margin: 40px 0;
 }
 
+.flex-video video {
+    border-top: 2px solid rgba(155,154,155,0.40);
+    border-bottom: 2px solid rgba(155,154,155,0.40);
+}
+
 #faq
 {
     color: #4A4A4A;
@@ -346,6 +355,7 @@ a
 #faq h2
 {
     padding: 20px 0 60px 0;
+    text-transform: uppercase;
 }
 
 #faq h3
