@@ -4,7 +4,9 @@
             <div class="row">
                 <div class="columns medium-6">
                     <div id="logo">
-                        <a href="<?php echo esc_url( home_url() ); ?>"><?php _e( 'Course', 'courseplanner' ); ?><span><?php _e( 'Planner', 'courseplanner' ); ?></span><?php _e( 'WP', 'courseplanner' ); ?></a>
+                        <?php _e( 'Course', 'courseplanner' ); ?>
+                        <span><?php _e( 'Planner', 'courseplanner' ); ?></span>
+                        <?php _e( 'WP', 'courseplanner' ); ?>
                     </div>
                 </div>
                 <div class="columns text-center medium-6 medium-text-right">

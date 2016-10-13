@@ -363,6 +363,11 @@ a
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 25px;
+    text-align: center;
+}
+
+#faq p {
+    font-size: 18px;
 }
 
 #faq .row .columns
@@ -405,7 +410,7 @@ a
     font-weight: 600;
     color: #8E8E8E;
     height: 40px;
-    background: #D8D8D8;
+    background: #F6F6F6;
     box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.50);
     border-radius: 4px;
     margin-bottom: 30px;
@@ -475,6 +480,10 @@ a
     background-color: #FF661B;
 }
 
+#contact .error {
+    border: 1px solid red;
+}
+
 .caldera-grid .form-control
 {
     padding: 0px 24px 0px 16px;
@@ -489,7 +498,7 @@ footer
 {
     font-size: 14px;
     color: #4A4A4A;
-    background-color: #D8D8D8;
+    background-color: #F6F6F6;
     border-top: 2px solid rgba(155,154,155,0.40);
 }
 

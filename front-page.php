@@ -78,8 +78,8 @@ http://marketing.apollidon.com/l/63232/2016-10-12/33fnwh">
                                     <!--<select>
                                         <option value="husker">interested in</option>
                                         <option value="starbuck">Starbuck</option>
-                                        <option value="hotdog" data-pg-id="82">Hot Dog</option>
-                                        <option value="apollo" data-pg-id="83">Apollo</option>
+                                        <option value="hotdog">Hot Dog</option>
+                                        <option value="apollo">Apollo</option>
                                     </select>-->
                                 </div>
                                 <div class="columns small-12 medium-6">
