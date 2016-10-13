@@ -8,9 +8,11 @@ get_header(); ?>
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Course-Planner-Boring.png" />
             <p class="text-center" style="color:<?php echo get_theme_mod( 'main_subheading_color' ); ?>;"><?php echo get_theme_mod( 'main_subheading', __( 'Pellentesque sed sapien lorem at lacinia urna.', 'courseplanner' ) ); ?></p>
             <h2 class="text-center" style="color:<?php echo get_theme_mod( 'main_title_color' ); ?>;"><?php echo get_theme_mod( 'main_title', __( 'Pellentesque Sed Sapien Lorem', 'courseplanner' ) ); ?></h2>
-            <button class="orange-button" style="background-color:<?php echo get_theme_mod( 'main_button_color' ); ?>;">
-                <?php echo get_theme_mod( 'main_button', __( 'Request Demo', 'courseplanner' ) ); ?>
-            </button>
+            <a href="#contact">
+                <button class="orange-button" style="background-color:<?php echo get_theme_mod( 'main_button_color' ); ?>;">
+                    <?php echo get_theme_mod( 'main_button', __( 'Request Demo', 'courseplanner' ) ); ?>
+                </button>
+            </a>
         </div>
     </div>
 </section>
@@ -32,9 +34,11 @@ get_header(); ?>
                                     <!-- <iframe width="640" height="360" src="assets/courseplannerDemo.mp4" frameborder="0" allowfullscreen></iframe> -->
                                 </div>
                                 <?php the_content(); ?>
-                                <button class="orange-button float-center">
-                                    <?php _e( 'Request Demo', 'courseplanner' ); ?>
-                                </button>
+                                <a href="#contact">
+                                    <button class="orange-button float-center">
+                                        <?php _e( 'Request Demo', 'courseplanner' ); ?>
+                                    </button>
+                                </a>
                             </article>
                         <?php endwhile; ?>
                     <?php else : ?>

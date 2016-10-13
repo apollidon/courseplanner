@@ -32,10 +32,10 @@
                                 <a href="#how-it-works"><?php _e( 'how it works', 'courseplanner' ); ?></a>
                             </li>
                             <li>
-                                <a href="#faq"><?php _e( 'FAQ', 'courseplanner' ); ?></a>
+                                <a href="#faq"><?php _e( 'Benefits', 'courseplanner' ); ?></a>
                             </li>
                             <li>
-                                <a href="#contact"><?php _e( 'CONTACT US', 'courseplanner' ); ?></a>
+                                <a href="#contact"><?php _e( 'contact us', 'courseplanner' ); ?></a>
                             </li>
                             <!-- A dropdown in case we need it -->
                             <!-- <li class="is-dropdown-submenu-parent opens-right">
