@@ -24,11 +24,11 @@ $(document).ready(function(){
         if(this.value==''){this.value='Please enter a valid email.'}
      });
 
-    $( "#message" ).focus(function() {
-        if(this.value=='Please enter your message.'){this.value=''}
-     });
-
-    $( "#message" ).blur(function() {
-        if(this.value==''){this.value='Please enter your message.'}
-     });
+    // $( "#message" ).focus(function() {
+    //     if(this.value=='Please enter your message.'){this.value=''}
+    //  });
+		//
+    // $( "#message" ).blur(function() {
+    //     if(this.value==''){this.value='Please enter your message.'}
+    //  });
 });

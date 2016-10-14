@@ -15,10 +15,10 @@ $(document).ready(function(){
         "Please enter a valid email."
         );
 
-        $.validator.addMethod("message", function(value, element) {
-        if (element.value == "Message*" || element.value == "Please enter your message."){return false;}else{return true;}},
-        "Please enter your message."
-        );
+        // $.validator.addMethod("message", function(value, element) {
+        // if (element.value == "Message*" || element.value == "Please enter your message."){return false;}else{return true;}},
+        // "Please enter your message."
+        // );
 
         $(".request_demo").validate({
             onkeyup: false,
@@ -45,11 +45,11 @@ $(document).ready(function(){
 				email: true
 				},
 
-            message: {
-        required: true,
-        message: true,
-        minlength: 25
-        }
+        //     message: {
+        // required: true,
+        // message: true,
+        // minlength: 25
+        // }
       },
             messages: {
 			        first_name: "Please enter your first name.",
