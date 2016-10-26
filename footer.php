@@ -3,7 +3,7 @@
         <footer>
             <div class="row">
                 <div class="columns medium-6">
-                    <div id="logo">
+                    <div class="logo">
                         <a href="<?php echo esc_url( home_url() ); ?>"><?php _e( 'Course', 'courseplanner' ); ?><span><?php _e( 'Planner', 'courseplanner' ); ?></span><?php _e( 'WP', 'courseplanner' ); ?></a>
                     </div>
                 </div>
