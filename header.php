@@ -26,7 +26,7 @@
                         </div>
                         <button class="menu-icon" type="button" data-toggle></button>
                     </div>
-                    <nav id="main-menu" class="top-bar" data-topbar role="navigation">
+                    <nav id="main-menu" class="top-bar" data-topbar>
                         <ul class="dropdown menu align-right vertical medium-horizontal" data-responsive-menu="" data-dropdown-menu>
                             <li>
                                 <a href="#how-it-works"><?php _e( 'how it works', 'courseplanner' ); ?></a>
