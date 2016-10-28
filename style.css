@@ -516,6 +516,14 @@ footer nav .menu
 
 @media (max-width:40em)
 {
+    #main h2 {
+      font-size: 2rem;
+    }
+
+    #how-it-works h1 {
+      font-size: 2rem;
+    }
+
     #faq .row .columns
     {
         padding-bottom: 40px;
