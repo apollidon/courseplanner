@@ -5,7 +5,7 @@ get_header(); ?>
 <section id="main" style="<?php if($image_attributes) echo 'background-image:url(\''.$image_attributes[0].'\')' ?>">
     <div class="row">
         <div class="columns align-self-middle text-center">
-            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Course-Planner-Boring.png" alt="Course-Planner-Bg" />
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Course-Planner-Boring.png" />
             <p class="text-center" style="color:<?php echo get_theme_mod( 'main_subheading_color' ); ?>;"><?php echo get_theme_mod( 'main_subheading', __( 'Pellentesque sed sapien lorem at lacinia urna.', 'courseplanner' ) ); ?></p>
             <h2 class="text-center" style="color:<?php echo get_theme_mod( 'main_title_color' ); ?>;"><?php echo get_theme_mod( 'main_title', __( 'Pellentesque Sed Sapien Lorem', 'courseplanner' ) ); ?></h2>
             <a href="#contact">
