@@ -546,7 +546,10 @@ footer nav .menu
         border-bottom: none;
     }
 
+}
 
-
-
+@-moz-document url-prefix() {
+  .menu-icon {
+     margin-top: 2rem;
+  }
 }
